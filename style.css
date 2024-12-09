@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    scrollbar-width: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #1e1e2f;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.navbar-menu li a:hover {
+    color: #50c878;
+    transition: color 0.3s ease;
+}
+
+main {
+    flex: 1;
+    padding: 50px 0;
+}
+
+.header {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.header .container {
+    font-weight: 900;
+    height: 300px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-left: 50px;
+}
+
+header p {
+    margin: 20px 0;
+    margin-left: 50px;
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #3a80f6;
+}
+
+.secondary {
+    background-color: #50c878;
+}
+
+.features .container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #555;
+}
+
+.how-it-works {
+    padding: 50px 0;
+}
+
+.how-it-works ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.integrations .logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.features .container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #555;
+}
+
+.search-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a80f6;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #2b66c4;
+}
+
+.hpc {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo {
+    width: 10;
+    height: 10;
+}
+
+.integrations {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.integrations h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.integrations .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.integrations .logos img {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.integrations .logos img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .integrations .logos {
+        justify-content: center;
+    }
+
+    .integrations .logos img {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .integrations .logos img {
+        max-width: 80px;
+    }
+}

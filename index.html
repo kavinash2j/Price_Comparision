@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Price Comparator - Comparify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <pre class="hpc">Price Comparison</pre>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="new/index.html">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <header class="header">
+        <div class="container">
+            <h1>Search the Best</h1>
+            <h1>Deals with One Click!</h1>
+            <p>Save time and money with Comparify, the Chrome extension that helps you find the best deals and provides comprehensive product summaries.</p>
+            <button class="search-button" onclick="app()">Search Now</button> <!-- Added search button -->
+        </div>
+    </header>
+    <script>
+        function app(){
+            window.location.href = "new/index.html";
+
+        }
+    </script>
+
+    <div class="features">
+        <div class="container">
+            <div class="feature">
+                <div class="feature-box">
+                    <h3>Instant Price Comparisons</h3>
+                    <p>Comparify highlights the best prices and savings opportunities effortlessly.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-box">
+                    <h3>Comprehensive Product Summaries</h3>
+                    <p>Access detailed product descriptions, specifications, and user reviews.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-box">
+                    <h3>User-Friendly and Efficient</h3>
+                    <p>Spend less time searching and shopping with efficient browsing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="integrations">
+        <div class="container">
+            <h2>Integrations with Top Web-Stores</h2>
+            <div class="logos">
+                <img src="amazon.png" alt="Amazon">
+                <img src="flipkart.png" alt="flipkart">
+                <img style="height: 50px" src="myntra.png" alt="myntra">
+                <img src="ebay.png" alt="eBay">
+                <img src="alibaba.png" alt="Alibaba">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Comparify. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="database.js"></script>
+    <script src="recommmendection.js"></script>
+</body>
+</html>
